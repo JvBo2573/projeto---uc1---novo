@@ -14,8 +14,11 @@ body{
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     padding: 16px 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
+main {
+    flex: 1;
 }
 
 .nav{
@@ -41,19 +44,20 @@ body{
 .container-banner{
     position: relative;
     width: 100%;
+    height: auto;
+    
 }
 
 .container-banner img{
-    width: 100%;
-    
-    
+    max-width: 100%;
+    height: auto;
 }
 .primary-button{
     color: white;
     background-color:#e74c3c;;
     text-decoration: none;
     border-radius: 5px;
-    padding: 10px ; 
+    padding: 10px; 
 }
 
 .sobreposicao-banner{
@@ -91,7 +95,8 @@ body{
 
 .destinos-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(600px, 2fr));
+    
 }
 
 .destinos-card{
@@ -100,7 +105,9 @@ body{
     box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
     transition: transform 0.3s, box-shadow 0.3s;
     overflow: hidden;
-    margin: 30px 30px;
+    margin: 30px 50px 50px 50px;
+    display: grid;
+    
     
 }
 
@@ -112,7 +119,11 @@ body{
 }
 
 .destinos-info{
-    padding: 10px 20px;   
+    padding: 10px 20px;  
+    gap: 10px;
+    justify-self: start;
+    display: flex;
+    flex-direction: column;
 }
 
 .secundary-button{
@@ -121,13 +132,16 @@ body{
     text-decoration: none;
     border-radius: 5px;
     padding: 10px;
-    
+    width: 100px;
+    text-align: center;
 }
+
 
 .vantagens-grid{
     display: grid;
-    grid-template-columns: repeat(3,2fr)
-    }
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
 
 .vantagens-card{
     background-color: white;
@@ -135,13 +149,92 @@ body{
     box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
     /* transition: transform 0.3s, box-shadow 0.3s; */
     overflow: hidden;
-    margin: 30px 30px;
     text-align: center;
+    margin: 20px 20px;
 }
 
 .vantagens-icons{
     font-size: 55px;
 }
+
+        /* estilização do conversor */
+
+
+
+.alinhamento-conversor{
+    text-align: center;
+    margin: 40px;
+}
+
+.alinhamento-conversor h1{
+    color:  #34495e;
+}
+
+.alinhamento-conversor{
+    color: #7f8c8d;
+}
+
+
+
+.form{
+    display: grid;
+    padding: 0px 30px;  
+    
+    color:  #34495e;
+}
+
+
+.input-conversor{
+    border-radius: 5px;
+    height: 35px;
+    color: #34495e;
+}
+
+.container-conversor{   
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+    overflow: hidden;
+    display: grid;
+    margin: 0px 400px 0px 400px;
+}
+
+.container-conversor h2{
+   text-align: center;
+   padding: 20px;
+}
+
+.label-conversor{
+    padding: 10px 0px;
+    justify-items: start;
+    
+}
+
+
+.secundary-button-conversor{
+    color: white;
+    background-color:#3498db;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+
+
+/* border: 1px red solid; */
+
+
+
+
+
+
+
+
+
+
 
 
 .container-rodape{
@@ -149,5 +242,7 @@ body{
     background-color: rgb(64, 64, 196);
     color: white;
     padding: 20px;
+    margin-top: 100px;
+    margin-bottom: 0px;
 }
 
